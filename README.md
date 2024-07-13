@@ -110,8 +110,13 @@ This file defines the resources and configurations for the Azure Blob Storage mo
 
 ## Naming Standard Validations
 
-<img width="953" alt="Screenshot 2024-07-12 at 9 17 52 PM" src="https://github.com/user-attachments/assets/93a97ee4-85f0-45f2-a35a-cceca9669907">
+<img width="953" alt="NameValidation" src="https://github.com/user-attachments/assets/be5c0047-bdfe-4b8a-89a3-23cdca4a6e8c">
+
 
 ## Result
 
 These modules ensure that infrastructure is deployed with consistent naming conventions, specific regional restrictions, and mandatory organizational tags, providing a standardized and compliant way to manage Azure resources.
+
+![Screenshot 2024-07-13 at 1 04 47 AM](https://github.com/user-attachments/assets/59d75789-5827-48ce-a7da-aaa9511bb420)
+
+
