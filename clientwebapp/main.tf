@@ -12,7 +12,7 @@ module "keyvault" {
   source = "../tferogersdemo/modules/keyvault"
 
   keyvault_name       = "rogers-webapp-kv"
-  resource_group_name = module.resource_group.resource_group_name  # Explicit dependency
+  resource_group_name = "rogers-webapp-rg"
   region              = "CanadaCentral"
   business_unit       = "IT"
   owner               = "Dakshay"
@@ -23,7 +23,7 @@ module "blob_storage" {
   source = "../tferogersdemo/modules/blob_storage"
 
   storage_account_name    = "rogerswebappblob"
-  resource_group_name     = module.resource_group.resource_group_name  # Explicit dependency
+  resource_group_name     = "rogers-webapp-rg"
   region                  = "CanadaEast"
   business_unit           = "IT"
   owner                   = "Dakshay"
