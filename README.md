@@ -6,7 +6,7 @@ Usecase - Deploy Keyvault in Canada Central and Blob Storage in Canada East with
 
 This Terraform module deploys an Azure Resource Group with specific constraints and mandatory tags.
 
-## RG Module main.tf
+## Module main.tf
 
 This file defines the resources and configurations for the Azure Resource Group module.
 
@@ -17,7 +17,7 @@ This file defines the resources and configurations for the Azure Resource Group 
 | `output "region"`         | Outputs the region of the created resource group.                                        |
 | `output "tags"`           | Outputs the tags associated with the resource group.                                     |
 
-## Module Variables
+## Module variables.tf
 
 | Name                 | Description                                                             | Type   | Default | Required |
 |----------------------|-------------------------------------------------------------------------|--------|---------|----------|
@@ -27,7 +27,7 @@ This file defines the resources and configurations for the Azure Resource Group 
 | `owner`              | The owner of the resource group.                                        | string | n/a     | yes      |
 | `application`        | The application associated with the resource group.                     | string | n/a     | yes      |
 
-## Module Outputs
+## Module outputs.tf
 
 | Name                  | Description                             |
 |-----------------------|-----------------------------------------|
@@ -48,7 +48,7 @@ This file defines the resources and configurations for the Azure Key Vault modul
 | `output "region"`           | Outputs the region where the Key Vault is created.                                       |
 | `output "tags"`             | Outputs the tags associated with the Key Vault.                                          |
 
-## variables.tf
+## Module variables.tf
 
 | Name                 | Description                                                             | Type   | Default | Required |
 |----------------------|-------------------------------------------------------------------------|--------|---------|----------|
@@ -59,7 +59,7 @@ This file defines the resources and configurations for the Azure Key Vault modul
 | `owner`              | The owner of the Key Vault.                                             | string | n/a     | yes      |
 | `application`        | The application associated with the Key Vault.                          | string | n/a     | yes      |
 
-## outputs.tf
+## Module outputs.tf
 
 | Name                   | Description                             |
 |------------------------|-----------------------------------------|
@@ -84,7 +84,7 @@ This file defines the resources and configurations for the Azure Blob Storage mo
 | `output "region"`                   | Outputs the region where the Storage Account is created.                                 |
 | `output "tags"`                     | Outputs the tags associated with the Storage Account.                                    |
 
-## variables.tf
+## Module variables.tf
 
 | Name                      | Description                                                             | Type   | Default | Required |
 |---------------------------|-------------------------------------------------------------------------|--------|---------|----------|
@@ -99,7 +99,7 @@ This file defines the resources and configurations for the Azure Blob Storage mo
 | `vnet_id`                 | The ID of the virtual network.                                          | string | n/a     | yes      |
 | `subnet_id`               | The ID of the subnet within the virtual network.                        | string | n/a     | yes      |
 
-## outputs.tf
+## Module outputs.tf
 
 | Name                   | Description                             |
 |------------------------|-----------------------------------------|
