@@ -117,6 +117,5 @@ This file defines the resources and configurations for the Azure Blob Storage mo
 
 These modules ensure that infrastructure is deployed with consistent naming conventions, specific regional restrictions, and mandatory organizational tags, providing a standardized and compliant way to manage Azure resources.
 
-![Screenshot 2024-07-13 at 1 04 47 AM](https://github.com/user-attachments/assets/59d75789-5827-48ce-a7da-aaa9511bb420)
-
+![Screenshot 2024-07-13 at 3 02 42 PM](https://github.com/user-attachments/assets/d69eb271-fb3c-4e2d-81ab-e42abb5bdeb1)
 
