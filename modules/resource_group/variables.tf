@@ -15,3 +15,18 @@ variable "region" {
     error_message = "The region must be either 'CanadaCentral' or 'CanadaEast'."
   }
 }
+
+variable "business_unit" {
+  description = "The business unit associated with the resource group"
+  type        = string
+}
+
+variable "owner" {
+  description = "The owner of the resource group"
+  type        = string
+}
+
+variable "application" {
+  description = "The application associated with the resource group"
+  type        = string
+}
