@@ -1,0 +1,4 @@
+clientwebapp/.terraform.lock.hcl
+clientwebapp/.terraform/modules/modules.json
+clientwebapp/.terraform/providers/registry.terraform.io/hashicorp/azurerm/3.112.0/darwin_arm64/LICENSE.txt
+clientwebapp/.terraform/providers/registry.terraform.io/hashicorp/azurerm/3.112.0/darwin_arm64/terraform-provider-azurerm_v3.112.0_x5
