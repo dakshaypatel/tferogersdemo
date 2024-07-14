@@ -1,5 +1,5 @@
 module "resource_group" {
-  source = "../tferogersdemo/modules/resource_group/"
+  source = "../modules/resource_group/"
 
   resource_group_name = "rogers-webapp-rg"
   region              = "CanadaCentral"
@@ -9,10 +9,10 @@ module "resource_group" {
 }
 
 module "keyvault" {
-  source = "../tferogersdemo/modules/keyvault"
+  source = "../modules/keyvault"
 
   keyvault_name       = "rogers-webapp-kv"
-  resource_group_name = "rogers-webapp-rg"
+  resource_group_name = module.resource_group.resource_group_name
   region              = "CanadaCentral"
   business_unit       = "IT"
   owner               = "Dakshay"
@@ -20,10 +20,10 @@ module "keyvault" {
 }
 
 module "blob_storage" {
-  source = "../tferogersdemo/modules/blob_storage"
+  source = "../modules/blob_storage"
 
   storage_account_name    = "rogerswebappblob"
-  resource_group_name     = "rogers-webapp-rg"
+  resource_group_name     = module.resource_group.resource_group_name
   region                  = "CanadaEast"
   business_unit           = "IT"
   owner                   = "Dakshay"
